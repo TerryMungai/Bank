@@ -27,7 +27,7 @@ class BankAccount:
     self.last_name=last_name
     self.balance=0
     self.phonenumber=724649620
-    
+    self.loan=0
  #method1   
   def account_name(self):
     name="{} account for {} {}".format(self.bank,self.first_name,self.last_name)
@@ -35,26 +35,27 @@ class BankAccount:
  
  #method2   
   def deposit(self, amount):
-    self .balance+=amount
-    if amount>0:
-      print("You have deposited {} to your account". format(amount))
+  if amount == 0;
+    
+      print("You cannot deposite zero or negative")
     else:
-      print("You cannot  deposit  {} into your account".format(amount))
+         self.balance == amount
+         self.deposits.append(amount)
+         print("you have deposited {}".format(amount,self.account_name()))
  
  #method3 
   def get_balance(self):
     return("The balance for {} is {} ".format(self.account_name(),self.balance))
   
   #method4
-  def withdraw(self,amount): amount>0
-if self.balance>=amount:
-      self.balance>=amount
-      print("You have withdrawn {} from your account".format(amount))
+  def withdraw(self,amount):
+if amount <=0;
+  print("You cannot withdraw zero or {} from your account".format(amount))
 else:
       print("You cannot withdraw {} from your account".format(amount))  
 #method5
-def loanamount(self,amount): amount>0
-if self.balance>=amount:
+def request_loan(self,amount): amount>0
+if amount<=0
       self.balance>=amount
       print("you have borrowed {} from the bank".format(amount))
 else:
